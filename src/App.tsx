@@ -14,6 +14,7 @@ const Standards = lazy(() => import('./pages/Standards'));
 const Pro = lazy(() => import('./pages/Pro'));
 const Research = lazy(() => import('./pages/Research'));
 const About = lazy(() => import('./pages/About'));
+const AboutMe = lazy(() => import('./pages/AboutMe'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const LearnIndex = lazy(() => import('./pages/Learn').then((m) => ({ default: m.LearnIndex })));
 const LearnArticle = lazy(() => import('./pages/Learn').then((m) => ({ default: m.LearnArticle })));
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/pro" element={<Pro />} />
             <Route path="/research" element={<Research />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about-me" element={<AboutMe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

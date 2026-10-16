@@ -392,3 +392,30 @@ div.en { display: block; text-align: right; }
 .empty-state p { max-width: 52ch; color: var(--ink-2); margin: 0; }
 .mobile-only { display: none; }
 @media (max-width: 1020px) { .mobile-only { display: inline-flex; } }
+
+/* معرفی بنیان‌گذار */
+.about-me { padding-block: 12px 56px; }
+.profile-hero { display: grid; grid-template-columns: minmax(220px, 320px) minmax(0, 1fr); gap: clamp(24px, 5vw, 64px); align-items: center; padding: clamp(20px, 4vw, 48px); background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
+.profile-photo { padding: 10px; border: 1px solid var(--line-strong); border-radius: 180px 180px 20px 20px; background: var(--surface-2); }
+.profile-photo img { display: block; width: 100%; height: auto; border-radius: 170px 170px 14px 14px; }
+.profile-eyebrow { display: block; color: var(--muted); font-size: var(--fs-sm); font-weight: 650; margin-bottom: 12px; }
+.profile-intro h1 { margin-bottom: 16px; }
+.profile-intro p { color: var(--ink-2); line-height: 2.1; }
+.profile-education { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-weight: 650; }
+.profile-education svg { flex-shrink: 0; color: var(--accent); }
+.profile-interests { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 24px 0 0; list-style: none; }
+.profile-interests li { border: 1px solid var(--line); border-radius: 24px; padding: 5px 12px; font-size: var(--fs-xs); background: var(--surface-2); }
+.profile-sections { max-width: 880px; margin: 44px auto; }
+.profile-section { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 20px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+.profile-section h2 { margin-bottom: 18px; }
+.profile-section p { color: var(--ink-2); line-height: 2.2; }
+.profile-section p:last-child { margin-bottom: 0; }
+.profile-icon { color: var(--accent); margin-top: 4px; }
+.profile-vision { max-width: 880px; margin-inline: auto; padding: clamp(24px, 4vw, 40px); border-inline-start: 4px solid var(--accent); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); }
+.profile-vision p { font-size: var(--fs-lg); line-height: 2.1; margin-bottom: 0; }
+@media (max-width: 700px) {
+  .profile-hero { grid-template-columns: minmax(0, 1fr); }
+  .profile-photo { width: min(260px, 100%); margin-inline: auto; }
+  .profile-section { gap: 12px; }
+  .profile-intro h1 { font-size: clamp(1.8rem, 7vw, 2.7rem); }
+}

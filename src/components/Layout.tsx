@@ -29,6 +29,7 @@ const MAIN = [
   { to: '/learn', label: 'آموزش' },
   { to: '/pro', label: 'پنل تخصصی' },
   { to: '/research', label: 'گزارش پژوهشی' },
+  { to: '/about-me', label: 'درباره من' },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
